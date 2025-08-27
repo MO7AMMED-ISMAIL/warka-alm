@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Target, Heart, Award, Clock, MapPin } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const teamMembers = [
   {
@@ -220,12 +221,11 @@ export default function AboutPage() {
             >
               تواصل معنا
             </a>
-            <a
-              href="/"
+            <Link href="/"
               className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
             >
               تصفح المنتجات
-            </a>
+            </Link>
           </div>
         </div>
       </main>
